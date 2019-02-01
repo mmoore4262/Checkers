@@ -1,4 +1,11 @@
 package sample;
 
-public class Controller {
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Controller
+{
+
 }
