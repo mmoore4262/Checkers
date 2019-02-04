@@ -7,5 +7,13 @@ import javafx.stage.Stage;
 
 public class Controller
 {
+    public void updateRedScore(int num)
+    {
 
+    }
+
+    public void updateBlackScore(int num)
+    {
+        
+    }
 }
