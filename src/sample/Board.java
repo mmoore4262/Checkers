@@ -15,13 +15,15 @@ public class Board
     //creates a series of Checkers based off the arrayBoard, the checkers are either red or black depending
     // on whether the respective position in arrayBoard is "X" or "e"
     public  static void fillBoard() {
+        Checkers[][] CheckerBoard = new Checkers[8][8];
+
         for (int i = 0; i < arrayBoard.length; i++) {
             for (int j = 0; j < arrayBoard[i].length;j++) {
                 if (arrayBoard[i][j].equals("X")) {
-
+                  CheckerBoard[i][j] = new Checkers(i,j,"black");
                 }
                 else {
-
+                    CheckerBoard[i][j] = new Checkers(i,j,"red");
                 }
             }
         }
