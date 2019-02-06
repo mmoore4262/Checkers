@@ -9,8 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import sample.Board;
 
 import javafx.scene.image.ImageView;
+
+
 
 
 public class Main extends Application {
@@ -24,12 +27,13 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
+        Board.createBoard();
     }
 
 
     public static void main(String[] args) {
         launch(args);
     }
-
+        
 
 }
