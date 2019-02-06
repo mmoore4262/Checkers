@@ -22,13 +22,13 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
-        Board.fillBoard();
+        Board.createBoard();
     }
 
 
     public static void main(String[] args) {
         launch(args);
     }
-
+        
 
 }

@@ -14,7 +14,7 @@ public class Board
     };
     //creates a series of Checkers based off the arrayBoard, the checkers are either red or black depending
     // on whether the respective position in arrayBoard is "X" or "e"
-    public  static void fillBoard() {
+    public  static void createBoard() {
         Checkers[] CheckerBoard = new Checkers[24];
         CheckerBoard[0] = new Checkers(0,1,"black");
         CheckerBoard[1] = new Checkers(0,3,"black");
@@ -34,12 +34,12 @@ public class Board
         CheckerBoard[15] = new Checkers(5,7,"red");
         CheckerBoard[16] = new Checkers(6,0,"red");
         CheckerBoard[17] = new Checkers(6,2,"red");
-        CheckerBoard[19] = new Checkers(6,4,"red");
-        CheckerBoard[20] = new Checkers(6,6,"red");
-        CheckerBoard[21] = new Checkers(7,1,"red");
-        CheckerBoard[22] = new Checkers(7,3,"red");
-        CheckerBoard[23] = new Checkers(7,5,"red");
-        CheckerBoard[24] = new Checkers(7,7,"red");
+        CheckerBoard[18] = new Checkers(6,4,"red");
+        CheckerBoard[19] = new Checkers(6,6,"red");
+        CheckerBoard[20] = new Checkers(7,1,"red");
+        CheckerBoard[21] = new Checkers(7,3,"red");
+        CheckerBoard[22] = new Checkers(7,5,"red");
+        CheckerBoard[23] = new Checkers(7,7,"red");
 
 
 
