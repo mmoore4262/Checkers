@@ -18,6 +18,7 @@ public class Controller
     @FXML
     private Text blackCapturedCount;
 
+    //Possibly change these to change the scores by an inputted number instead of just by 1
     public void updateRedScore()
     {
         Main.redScore ++;
