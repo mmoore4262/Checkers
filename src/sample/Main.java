@@ -27,12 +27,6 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
-
-        Parent endScreen = FXMLLoader.load(getClass().getResource("endScreen.fxml"));
-        primaryStage.setTitle("You lose");
-        primaryStage.setScene(new Scene(endScreen, 500, 500));
-        primaryStage.show();
-
         FileInputStream input = new FileInputStream("images/blackcheckers.png");
         Image[] blackCheckers = new Image[12];
         for (int i = 0; i < 12; i++) {
@@ -58,7 +52,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
+        
 
 }
-
