@@ -18,15 +18,16 @@ public class Controller
     @FXML
     private Text blackCapturedCount;
 
-    public void updateRedScore(int num)
+    //Possibly change these to change the scores by an inputted number instead of just by 1
+    public void updateRedScore()
     {
-        Main.redScore += num;
+        Main.redScore ++;
         redCapturedCount.setText(String.valueOf(Main.redScore));
     }
 
-    public void updateBlackScore(int num)
+    public void updateBlackScore()
     {
-        Main.blackScore += num;
+        Main.blackScore ++;
         blackCapturedCount.setText(String.valueOf(Main.blackScore));
     }
 
