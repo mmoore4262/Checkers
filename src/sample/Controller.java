@@ -33,7 +33,7 @@ public class Controller
     //Delete these later - just for testing if it updates
     public void testRed()
     {
-        updateRedScore(5);
+        updateRedScore(2);
     }
 
     public void testBlack()
