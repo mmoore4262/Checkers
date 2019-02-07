@@ -28,6 +28,11 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
         Board.createBoard();
+
+        Parent endScreen = FXMLLoader.load(getClass().getResource("endScreen.fxml"));
+        primaryStage.setTitle("You lose");
+        primaryStage.setScene(new Scene(endScreen, 500, 500));
+        primaryStage.show();
     }
 
 
