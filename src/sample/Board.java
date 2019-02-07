@@ -1,5 +1,7 @@
 package sample;
 
+import java.io.FileInputStream;
+
 public class Board
 {
     static String arrayBoard[][] = {
@@ -44,4 +46,6 @@ public class Board
 
 
     }
+
+
 }
