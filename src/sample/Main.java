@@ -27,13 +27,13 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
-        FileInputStream input = new FileInputStream("blackcheckers.png");
+        FileInputStream input = new FileInputStream("images/blackcheckers.png");
         Image[] blackCheckers = new Image[12];
         for (int i = 0; i < 12; i++) {
             blackCheckers[0] = new Image(input);
             ImageView imageView = new ImageView(blackCheckers[0]);
         }
-        FileInputStream input2 = new FileInputStream("redcheckers.png");
+        FileInputStream input2 = new FileInputStream("images/redcheckers.png");
         Image[] redCheckers = new Image[12];
         for (int i = 0; i < 12; i++) {
             redCheckers[0] = new Image(input);
