@@ -10,8 +10,8 @@ public class csvReader {
     public static void main(String[] args) {
         String readIn="C:\\Users\\BT_1N3_01\\IdeaProjects\\Checkers\\src\\sample\\Checkers.csv";
         String readIn2="C:\\Users\\BT_1N3_33\\IdeaProjects\\Checkers\\src\\sample\\Checkers.csv";
-        String readIn3= "sample/Checkers.csv";
-       
+        String readIn3= "Checkers.csv";
+
         BufferedReader br = null;
         String row = "";
         String col = ",";
