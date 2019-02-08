@@ -9,6 +9,9 @@ import java.io.IOException;
 public class csvReader {
     public static void main(String[] args) {
         String readIn="C:\\Users\\BT_1N3_01\\IdeaProjects\\Checkers\\src\\sample\\Checkers.csv";
+        String readIn2="C:\\Users\\BT_1N3_33\\IdeaProjects\\Checkers\\src\\sample\\Checkers.csv";
+        String readIn3= "sample/Checkers.csv";
+       
         BufferedReader br = null;
         String row = "";
         String col = ",";
@@ -17,7 +20,7 @@ public class csvReader {
         try
         {
             //Buffered Reader only reads. Here is a wiki with all of it's methods. https://www.javatpoint.com/java-bufferedreader-class
-            br = new BufferedReader(new FileReader(readIn));
+            br = new BufferedReader(new FileReader(readIn2));
             //While there is a line with text in it, this loop will trigger.
             while((row=br.readLine())!=null)
             {
