@@ -12,13 +12,27 @@ import sample.Board;
 
 import javafx.scene.image.ImageView;
 
+import javax.swing.*;
 import java.io.FileInputStream;
 
 
-public class Main extends Application {
+public class
+Main extends Application {
 
     public static int redScore = 0;
     public static int blackScore = 0;
+
+        public  void showPicture() {
+            JFrame frame = new JFrame();
+            ImageIcon icon = new ImageIcon("redcheckers.png");
+            JLabel label = new JLabel(icon);
+            frame.add(label);
+            frame.setDefaultCloseOperation
+                    (JFrame.EXIT_ON_CLOSE);
+            frame.pack();
+            frame.setVisible(true);
+        }
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -61,6 +75,7 @@ public class Main extends Application {
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
+        showPicture();
         FileInputStream input = new FileInputStream("images/blackcheckers.png");
         ImageView[]ImageViewArr  = new ImageView[12];
         Image[] blackCheckers = new Image[12];
