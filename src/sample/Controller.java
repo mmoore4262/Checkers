@@ -40,4 +40,14 @@ public class Controller
     {
         updateBlackScore(2);
     }
+
+    public void switchScreen()
+    {
+        if (Main.blackScore == 12) {
+
+        }
+        else if (Main.redScore == 12) {
+
+        }
+    }
 }
